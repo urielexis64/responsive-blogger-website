@@ -1,8 +1,25 @@
+@import url('../css/fonts.css');
 html,
 body {
     margin: 0;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+:root {
+    /*  Colors */
+    --light-gray: #CFDBD5;
+    --platinum: #E8EDDF;
+    --stil-grain: #F5CB5C;
+    --raisin-black: #242423;
+    --jet: #333533;
+    --gradient-color: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    /* Fonts */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Baloo: 'Baloo', cursive;
+    --K2D: 'K2D', cursive;
+    --OpenSans: 'Open Sans', cursive;
 }
 
 
@@ -13,6 +30,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--jet);
 }
 
 .flex-row {
@@ -32,15 +50,35 @@ ul {
 /* ========================= Start Navbar ==========================*/
 
 .nav {
-    background: bisque;
+    background: white;
     padding: 0 2rem;
     height: 0;
-    min-height: 40vh;
+    min-height: 10vh;
     overflow: hidden;
+    transition: height .7s ease-in-out;
 }
 
 .nav .nav-menu {
     justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: var(--jet);
 }
 
 .nav .nav-items {
@@ -48,21 +86,62 @@ ul {
     margin: 0;
 }
 
+.collapse {
+    height: 31rem;
+}
+
 .nav .nav-items .nav-link {
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover {
+    background-color: var(--raisin-black);
+}
+
+.nav .nav-items .nav-link:hover a {
+    color: white;
 }
 
 .nav .nav-brand a {
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
+    font-family: var(--Anton);
+    font-size: 1.6rem;
 }
 
 .nav .social {
     padding: 1.4rem 0;
 }
 
+.nav .social i {
+    padding: 0 .2rem;
+    transition: color .2s ease;
+}
+
+.nav .social i:hover {
+    color: #ca744c;
+}
+
 
 /* ========================== End Navbar ===========================*/
+
+
+/* ========== Start Viewport less than or equal to 750px ========== */
+
+@media only screen and (max-width: 750px) {
+    .nav .nav-menu,
+    .nav .nav-items {
+        flex-direction: column;
+    }
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+
+/* ========== End Viewport less than or equal to 750px ========== */
