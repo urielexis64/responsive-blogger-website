@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Abel;
+    src: url(../fonts/Abel/Abel-Regular.ttf);
+}
+
+@font-face {
+    font-family: Anton;
+    src: url(../fonts/Anton/Anton-Regular.ttf);
+}
+
+@font-face {
+    font-family: Baloo;
+    src: url(../fonts/Baloo_Paaji_2/BalooPaaji2-Regular.ttf);
+}
+
+@font-face {
+    font-family: K2D;
+    src: url(../fonts/K2D/K2D-Regular.ttf);
+}
+
+@font-face {
+    font-family: Open Sans;
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
