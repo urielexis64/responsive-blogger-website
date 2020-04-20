@@ -53,9 +53,9 @@ ul {
     background: white;
     padding: 0 2rem;
     height: 0;
-    min-height: 10vh;
+    min-height: 7vh;
     overflow: hidden;
-    transition: height .7s ease-in-out;
+    transition: height .4s ease-in-out;
 }
 
 .nav .nav-menu {
@@ -83,7 +83,7 @@ ul {
 
 .nav .nav-items {
     display: flex;
-    margin: 0;
+    margin: auto;
 }
 
 .collapse {
@@ -137,9 +137,25 @@ ul {
     .nav .nav-menu,
     .nav .nav-items {
         flex-direction: column;
+        padding: 0;
     }
     .nav .toggle-collapse {
         display: initial;
+    }
+    .social,
+    .nav .nav-items {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .social a+a {
+        margin-left: 4rem;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    .nav {
+        min-height: 5rem;
     }
 }
 
