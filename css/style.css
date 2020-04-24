@@ -76,6 +76,10 @@ span {
     margin: 0 5vw;
 }
 
+.text-gray {
+    color: var(--light-gray);
+}
+
 
 /* ======================== End Global Classes ======================== */
 
@@ -265,6 +269,35 @@ section .container .owl-nav {
 
 
 /* ======================== End Blog Carousel ===========================*/
+
+
+/* ========================= Start Site Content ========================== */
+
+main .site-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+main .site-content .post-content>.post-image,
+.post-title {
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main .site-content .post-content>.post-image .post-info {
+    background: var(--gradient-color1);
+    padding: 1rem;
+    left: 20vw;
+    border-radius: 3rem;
+}
+
+
+/* ========================= End Site Content ========================== */
 
 
 /* ======================== End Main Content ===========================*/
