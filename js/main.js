@@ -1,9 +1,13 @@
 $(document).ready(() => {
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
+    $openBars = $('#open');
+    $closeBars = $('#close');
 
     $toggleCollapse.click(() => {
         $nav.toggleClass('collapse');
+        $openBars.toggleClass('close'); //Animation when you press the collapse button
+        $closeBars.toggleClass('open');
     });
 
     window.addEventListener('resize', () => {

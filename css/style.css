@@ -6,6 +6,35 @@ body {
     overflow-x: hidden;
 }
 
+
+/* ========================== Custom Scroll Bar ============================ */
+
+::-webkit-scrollbar {
+    width: 15px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-corner {
+    color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #7fc9ac 0%, rgb(39, 95, 76) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #92e7c5 0%, rgb(30, 90, 70) 100%);
+}
+
+
+/* ========================== End Custom Scroll Bar ============================ */
+
 :root {
     /*  Colors */
     --light-gray: #cfdbd5;
@@ -121,6 +150,20 @@ p {
 .nav .toggle-collapse .toggle-icons i {
     font-size: 1.4rem;
     color: var(--jet);
+    transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.close {
+    /* When an icon gone (pressing the collapse button)*/
+    opacity: 0;
+    transform: rotateZ(360deg);
+}
+
+.open {
+    /* When an icon appears (pressing the collapse button)*/
+    opacity: 1 !important;
+    margin-right: 15px;
+    transform: rotateZ(360deg);
 }
 
 .collapse {
@@ -218,7 +261,7 @@ main .blog {
     background-repeat: no-repeat;
     background-position: right;
     height: 100vh;
-    width: 100%;
+    width: 101%;
     background-size: 65%;
 }
 
@@ -233,6 +276,7 @@ main .blog-post .blog-content {
     width: 80%;
     margin: 3rem 2rem;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 main .blog-content .blog-title {
