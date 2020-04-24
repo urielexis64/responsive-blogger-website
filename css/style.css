@@ -80,6 +80,11 @@ span {
     color: var(--light-gray);
 }
 
+p {
+    font-family: var(--Baloo);
+    color: gray;
+}
+
 
 /* ======================== End Global Classes ======================== */
 
@@ -280,7 +285,6 @@ main .site-content {
 
 main .post-content {
     width: 100%;
-    margin-bottom: 5rem;
 }
 
 main .site-content .post-content>.post-image,
@@ -292,8 +296,56 @@ main .site-content .post-content>.post-image,
 main .site-content .post-content>.post-image .post-info {
     background: var(--gradient-color1);
     padding: 1rem;
+    position: absolute;
+    bottom: 0%;
     left: 20vw;
     border-radius: 3rem;
+}
+
+main .site-content .post-content>.post-image>div {
+    overflow: hidden;
+}
+
+main .site-content .post-content>.post-image .img {
+    width: 100%;
+    transition: transform .3s ease;
+}
+
+main .site-content .post-content>.post-image .img:hover {
+    transform: scale(1.1);
+}
+
+main .site-content .post-content>.post-image .post-info span {
+    margin: 0 .5rem;
+}
+
+main .post-content .post-title a {
+    font-family: var(--Anton);
+    font-size: 1.5rem;
+}
+
+.site-content .post-content .post-title .post-btn {
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background: var(--gradient-color1);
+}
+
+.site-content .pagination {
+    justify-content: center;
+    color: var(--light-gray);
+    margin: 4rem 0;
+}
+
+.site-content .pagination a {
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: var(--OpenSans);
+}
+
+.site-content .pagination .pages {
+    background: var(--jet);
+    color: white;
 }
 
 
