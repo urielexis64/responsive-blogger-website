@@ -6,6 +6,11 @@ $(document).ready(() => {
         $nav.toggleClass('collapse');
     });
 
+    window.addEventListener('resize', () => {
+        if (document.documentElement.clientWidth > 750)
+            $nav.removeClass('collapse');
+    });
+
 
     //owl carousel
     $('.owl-carousel').owlCarousel({

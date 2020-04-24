@@ -1,4 +1,4 @@
-@import url('../css/fonts.css');
+@import url("../css/fonts.css");
 html,
 body {
     margin: 0%;
@@ -8,19 +8,19 @@ body {
 
 :root {
     /*  Colors */
-    --light-gray: #CFDBD5;
-    --platinum: #E8EDDF;
-    --stil-grain: #F5CB5C;
+    --light-gray: #cfdbd5;
+    --platinum: #e8eddf;
+    --stil-grain: #f5cb5c;
     --raisin-black: #242423;
     --jet: #333533;
-    --gradient-color1: linear-gradient(to right, #d7d2cc 0%, rgb(39, 95, 76) 100%);
-    --gradient-color2: linear-gradient(to right, #2DA4BE 0%, #B661FD 100%);
+    --gradient-color1: linear-gradient( to right, #d7d2cc 0%, rgb(39, 95, 76) 100%);
+    --gradient-color2: linear-gradient(to right, #2da4be 0%, #b661fd 100%);
     /* Fonts */
-    --Abel: 'Abel', cursive;
-    --Anton: 'Anton', cursive;
-    --Baloo: 'Baloo', cursive;
-    --K2D: 'K2D', cursive;
-    --OpenSans: 'Open Sans', cursive;
+    --Abel: "Abel", cursive;
+    --Anton: "Anton", cursive;
+    --Baloo: "Baloo", cursive;
+    --K2D: "K2D", cursive;
+    --OpenSans: "Open Sans", cursive;
 }
 
 
@@ -77,7 +77,7 @@ span {
 }
 
 .text-gray {
-    color: var(--light-gray);
+    color: #123123;
 }
 
 p {
@@ -97,7 +97,7 @@ p {
     height: 0rem;
     min-height: 7vh;
     overflow: hidden;
-    transition: height .4s ease-in-out;
+    transition: all 700ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .nav .nav-menu {
@@ -124,7 +124,7 @@ p {
 }
 
 .collapse {
-    height: 30rem;
+    height: 31rem;
 }
 
 .nav .nav-items {
@@ -161,7 +161,7 @@ p {
 }
 
 .nav .social i {
-    padding: 0 .2rem;
+    padding: 0 0.2rem;
 }
 
 .nav .social i:hover {
@@ -202,7 +202,7 @@ main .site-title .btn {
 }
 
 main .site-title .btn:hover {
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, 0.2);
     color: white;
     border: 1px solid #fff;
 }
@@ -240,9 +240,9 @@ main .blog-content .blog-title {
 }
 
 main .blog-content .btn-blog {
-    padding: .7rem 2rem;
+    padding: 0.7rem 2rem;
     background: var(--gradient-color2);
-    margin: .5rem;
+    margin: 0.5rem;
 }
 
 main .blog-content span {
@@ -263,12 +263,12 @@ section .container .owl-nav {
     font-size: 2rem;
 }
 
-.owl-theme .owl-nav [class*='owl-']:hover {
+.owl-theme .owl-nav [class*="owl-"]:hover {
     background: transparent;
     color: var(--jet);
 }
 
-.owl-theme .owl-nav [class*='owl-']:hover {
+.owl-theme .owl-nav [class*="owl-"]:hover {
     outline: none;
 }
 
@@ -308,7 +308,7 @@ main .site-content .post-content>.post-image>div {
 
 main .site-content .post-content>.post-image .img {
     width: 100%;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
 }
 
 main .site-content .post-content>.post-image .img:hover {
@@ -316,7 +316,7 @@ main .site-content .post-content>.post-image .img:hover {
 }
 
 main .site-content .post-content>.post-image .post-info span {
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
 }
 
 main .post-content .post-title a {
@@ -326,7 +326,7 @@ main .post-content .post-title a {
 
 .site-content .post-content .post-title .post-btn {
     border-radius: 0;
-    padding: .7rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     background: var(--gradient-color1);
 }
 
@@ -337,9 +337,9 @@ main .post-content .post-title a {
 }
 
 .site-content .pagination a {
-    padding: .6rem .9rem;
+    padding: 0.6rem 0.9rem;
     border-radius: 2rem;
-    margin: 0 .3rem;
+    margin: 0 0.3rem;
     font-family: var(--OpenSans);
 }
 
