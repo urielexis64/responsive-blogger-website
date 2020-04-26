@@ -11,10 +11,14 @@ $(document).ready(() => {
     });
 
     window.addEventListener('resize', () => {
-        if (document.documentElement.clientWidth > 750)
+        if (document.documentElement.clientWidth > 750) {
             $nav.removeClass('collapse');
+            if ($openBars.hasClass('close')) {
+                $openBars.removeClass('close');
+                $closeBars.removeClass('open');
+            }
+        }
     });
-
 
     //owl carousel
     $('.owl-carousel').owlCarousel({
@@ -24,7 +28,18 @@ $(document).ready(() => {
         dots: false,
         nav: true,
         navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
-        autoplayHoverPause: true
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            900: {
+                items: 3
+            },
+            1600: {
+                items: 4
+            }
+        }
     });
 
 });
