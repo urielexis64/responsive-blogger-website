@@ -110,12 +110,17 @@ span {
 }
 
 .text-gray {
-    color: #123123;
+    color: var(--light-gray);
 }
 
 p {
     font-family: var(--Baloo);
     color: gray;
+}
+
+.brand-text {
+    color: #082015;
+    text-shadow: 0px 0px 5px #b1b1b1;
 }
 
 
@@ -514,7 +519,7 @@ footer.footer .newsletter .form-element input {
     border: none;
     background: transparent;
     color: white;
-    font-family: var(--OpenSans);
+    font-family: var(--Baloo);
     font-size: 1rem;
     width: 74%;
 }
@@ -535,6 +540,26 @@ footer.footer .instagram div>img {
 footer.footer .follow div i {
     color: white;
     padding: 0 .4rem;
+}
+
+footer.footer .rights {
+    justify-content: center;
+    font-family: var(--OpenSans)
+}
+
+footer.footer .move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span {
+    color: var(--light-gray);
+}
+
+footer.footer .move-up span:hover {
+    color: white;
+    cursor: pointer;
 }
 
 
