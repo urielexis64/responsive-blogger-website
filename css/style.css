@@ -525,6 +525,13 @@ footer.footer .newsletter .form-element span {
     cursor: pointer;
 }
 
+footer.footer .instagram div>img {
+    display: inline-block;
+    width: 26%;
+    height: 50%;
+    margin: .3rem .4rem;
+}
+
 
 /* ============================ End Footer ======================== */
 
