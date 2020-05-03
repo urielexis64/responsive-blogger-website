@@ -500,8 +500,29 @@ footer.footer .container>div {
     padding: 3rem .9rem;
 }
 
-footer.footer .container .about-us h2 {
+footer.footer .container h2 {
     color: var(--light-gray);
+}
+
+footer.footer .newsletter .form-element {
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input {
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--OpenSans);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span {
+    background: var(--platinum);
+    padding: .5rem .7rem;
+    cursor: pointer;
 }
 
 
