@@ -532,6 +532,11 @@ footer.footer .instagram div>img {
     margin: .3rem .4rem;
 }
 
+footer.footer .follow div i {
+    color: white;
+    padding: 0 .4rem;
+}
+
 
 /* ============================ End Footer ======================== */
 
